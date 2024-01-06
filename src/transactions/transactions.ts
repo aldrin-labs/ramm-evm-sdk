@@ -68,7 +68,7 @@ const liquidityWithdrawal = async function(
     const approve_tx = await pool.approve(pool.assetsAddresses[tokenOut], rammAddress, amountLPTconverted, gasPrice);
     await pool.client.waitForTransactionReceipt({ hash: approve_tx });
 
-    const tx = await pool.liquidity_withdrawal(tokenOut, amountLPTconverted.toString(),{gasPrice});
+    const tx = await pool.liquidity_withdrawal(tokenOut, amountLPTconverted.toString(), gasPrice);
     return tx;
 };
 

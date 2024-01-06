@@ -1,6 +1,6 @@
 {
   "name": "@ramm/ramm-evm-sdk",
-  "version": "0.4.20",
+  "version": "0.4.2069",
   "private": false,
   "scripts": {
     "build:sdk": "tsup ./index.ts --format cjs,esm --dts --clean",

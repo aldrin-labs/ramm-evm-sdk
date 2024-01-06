@@ -318,7 +318,9 @@ export class RAMMPool {
   }
 
   async liquidity_withdrawal(tokenOut: number, amount: string, gasPrice: any = parseGwei('720.42069')) {
-    return await this.rammContract.write.liquidity_withdrawal([tokenOut, amount], {gasPrice});
+    const params = { gasLimit: 620_000, gasPrice };
+
+    return await this.rammContract.write.liquidity_withdrawal([tokenOut, amount], params) as any;
   }
 
   async trade_amount_in(tokenIn: number, tokenOut: number, amountIn: string, minAmount: string, gasPrice: any = parseGwei('720.42069')){
