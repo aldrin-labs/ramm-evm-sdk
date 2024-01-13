@@ -13,7 +13,7 @@
 </div>
 
 ## Table Of Contents
-    * [Installation](#installation)
+  * [Installation](#installation)
     * [Examples](#examples)
       * [BalanceOf](#balanceof)
       * [CreateTrade](#createtrade)
