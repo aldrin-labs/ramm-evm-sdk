@@ -49,9 +49,9 @@ await tradeGivenIn(tokenIn, tokenOut, tradeAmount, minAmountOut, pool, doConvert
 // Perform trade
 await tradeGivenOut(tokenIn, tokenOut, tradeAmount, maxAmountIn, signer, pool, doConvertToWei);
 ```
-##Examples
+## Examples
 
-#New Pool
+# New Pool
 ```
 const network = SupportedNetworks.matic;
 
@@ -73,7 +73,7 @@ const pool = new RAMMPool(
 );
 ```
 
-##Pool Balance
+## Pool Balance
 ```import { RAMMPool } from '../index';
 import { getWalletBalances, getLPTokensAmounts } from '../src/interface';
 import BigNumber from 'bignumber.js';
@@ -120,7 +120,7 @@ const pool = new RAMMPool(
   const balances = await getWalletBalances(signer_account.address, pool);
   console.log('Asset balances:', balances);
 })();
-````
+```
 
 ## Create Trade
 ```import { tradeGivenIn, tradeGivenOut, RAMMPool } from '../index';
@@ -198,7 +198,7 @@ const tokenOut = 1;
 })();
 ```
 
-## Pool Deposit
+## Deposit into a Pool
 ```import {
     liquidityDeposit,
     multipleLiquidityDeposit,
@@ -297,7 +297,7 @@ describe('polygon ramm deposit to pool', () => {
 });
 ```
 
-##Withdraw from Pool
+## Withdraw from a Pool
 ```
 import {
     liquidityWithdrawal,
