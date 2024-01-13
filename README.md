@@ -20,6 +20,7 @@ The RAMM SDK is a straightforward wrapper for on-chain RAMM deployment, function
 ## Installation
 ```bash
 npm install ramm-evm-sdk
+```
 
 ## API Usage
 
@@ -32,7 +33,7 @@ const LPAmounts = getLPTokensAmounts(signer_account.address, [pool]);
 
 // Example usage of getWalletBalances
 const balances = getWalletBalances(signer_account.address, pool);
-
+```
 
 ### Creating a Trade 
 ```typescript
@@ -46,7 +47,7 @@ tradeGivenIn(tokenIn, tokenOut, wmatic_amount_in, min_weth_amount_out, pool);
 
 // Execute a trade with given out
 tradeGivenOut(tokenIn, tokenOut, min_weth_amount_out, wmatic_amount_in, client, pool);
-
+```
 
 ### Managing Liquidity
 ```typescript
@@ -60,14 +61,14 @@ liquidityDeposit(wmatic_amount_deposit, weth_amount_deposit, usdc_amount_deposit
 
 // Multiple liquidity deposits
 multipleLiquidityDeposit([wmatic_amount_deposit, weth_amount_deposit, usdc_amount_deposit, usdt_amount_deposit], walletClient, pool);
-
+```
 ### Pool State
 ```typescript
 import { getPoolState } from 'ramm-evm-sdk';
 
 // Get the state of a pool
 getPoolState(pool);
-
+```
 ### Liquidity Withdrawal
 ```typescript
 import { liquidityWithdrawal, multipleLiquidityWithdrawal, fetchBalance } from 'ramm-evm-sdk';
@@ -80,7 +81,7 @@ liquidityWithdrawal(WETH_INDEX, LPweth_amount_withdraw, pool);
 
 // Multiple liquidity withdrawals
 multipleLiquidityWithdrawal([LPwmatic_amount_withdraw, LPweth_amount_withdraw, LPusdc_amount_withdraw, LPusdt_amount_withdraw], walletClient, pool);
-
+```
 
 
 
