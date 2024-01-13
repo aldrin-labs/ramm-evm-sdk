@@ -16,10 +16,11 @@
   * [Installation](#installation)
     * [Examples](#examples)
         
-      * [NewPool](#newpool)
-      * [CreateTrade](#createtrade)
-      * [Deposit](#deposit)
-      * [Withdrawal](#withdrawal)
+      * [NewPool](#new-pool)
+      * [PoolBalance](#Pool-Balance)
+      * [CreateTrade](#create-trade)
+      * [Deposit](#Deposit-into-a-Pool)
+      * [Withdrawal](#Withdraw-from-a-Pool)
      
 ## Installation
 ```npm install @aldrin-labs/ramm-evm-sdk```
