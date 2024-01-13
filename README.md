@@ -20,6 +20,7 @@
       * [CreateTrade](#create-trade)
       * [Deposit](#Deposit-into-a-Pool)
       * [Withdrawal](#Withdraw-from-a-Pool)
+    * [API Reference](#API-Reference)
      
 ## Installation
 ```npm install @aldrin-labs/ramm-evm-sdk```
