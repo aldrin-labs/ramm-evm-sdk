@@ -26,7 +26,6 @@
 ## Usage
 
 ```import { RAMMPool, liquidityDeposit, liquidityWithdrawal, tradeGivenIn, tradeGivenOut } from 'aldrin-labs/ramm-evm-sdk';
-
 // Initialize RAMM Pool
 const pool = new RAMMPool(poolAddress, chainID, poolName, numberOfAssets, delta, baseFee, baseLeverage, protocolFee, publicClient, walletClient);
 
