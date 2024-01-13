@@ -56,6 +56,7 @@ await tradeGivenOut(tokenIn, tokenOut, tradeAmount, maxAmountIn, signer, pool, d
 import { SupportedNetworks } from '../src/constants';
 import { createWalletClient, http, publicActions } from 'viem'
 import { privateKeyToAccount } from 'viem/accounts'
+import { polygon } from 'wagmi/chains'
 
 const network = SupportedNetworks.matic;
 
@@ -83,6 +84,8 @@ const pool = new RAMMPool(
   poolConfig.protocolFee,
   walletClient, 
 );
+
+ await pool.initialize(polygon);
 
 ```
 
