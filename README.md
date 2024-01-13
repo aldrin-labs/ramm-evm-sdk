@@ -91,7 +91,7 @@ const pool = new RAMMPool(
 
 ```
 
-### Pool Balance
+### Get Pool / User Balance
 ```import { RAMMPool } from '../index';
 import { getWalletBalances, getLPTokensAmounts } from '../src/interface';
 import BigNumber from 'bignumber.js';
