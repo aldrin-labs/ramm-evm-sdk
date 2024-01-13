@@ -16,7 +16,7 @@
   * [Installation](#installation)
     * [Examples](#examples)
       * [NewPool](#new-pool)
-      * [PoolBalance](#Get-Pool-/-User-Balance)
+      * [Get-Pool-/User-Balance](#Get-Pool-/-User-Balance)
       * [CreateTrade](#create-trade)
       * [Deposit](#Deposit-into-a-Pool)
       * [Withdrawal](#Withdraw-from-a-Pool)
