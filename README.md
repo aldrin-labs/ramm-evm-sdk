@@ -22,8 +22,7 @@
       * [Withdrawal](#withdrawal)
      
 ## Installation
-```npm install @aldrin-labs/ramm-evm-sdk
-```
+```npm install @aldrin-labs/ramm-evm-sdk```
 
 ## Usage
 
