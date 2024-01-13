@@ -13,8 +13,6 @@
 </div>
 
 ## Table Of Contents
-
-  * [Features](#features)
     * [Installation](#installation)
     * [Examples](#examples)
       * [BalanceOf](#balanceof)
