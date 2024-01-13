@@ -15,10 +15,10 @@
 ## Table Of Contents
   * [Installation](#installation)
     * [Examples](#examples)
-      * [BalanceOf](#balanceof)
+        
+      * [NewPool](#newpool)
       * [CreateTrade](#createtrade)
       * [Deposit](#deposit)
-      * [PoolState](#poolstate)
       * [Withdrawal](#withdrawal)
      
 ## Installation
