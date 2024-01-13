@@ -15,7 +15,6 @@
 ## Table Of Contents
   * [Installation](#installation)
     * [Examples](#examples)
-        
       * [NewPool](#new-pool)
       * [PoolBalance](#Pool-Balance)
       * [CreateTrade](#create-trade)
