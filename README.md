@@ -78,7 +78,7 @@ await tradeGivenOut(tokenIn, tokenOut, tradeAmount, maxAmountIn, signer, pool, d
 - trade_amount_out(tokenIn: number, tokenOut: number, amountOut: string, maxAmount: string, gasPrice: any): Promise<any>
 - getPoolState(): Promise<PoolState>
 
-# Module: transactions
+# Transactions
 
 # Functions
 - liquidityDeposit(tokenIn: number, depositAmount: BigNumber, signer: any, pool: RAMMPool, toConvertToWei: boolean, gasPrice: any): Promise<any>
