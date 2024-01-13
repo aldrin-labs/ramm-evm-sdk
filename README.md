@@ -52,7 +52,7 @@ await tradeGivenOut(tokenIn, tokenOut, tradeAmount, maxAmountIn, signer, pool, d
 ```
 # Examples
 
-### New Pool
+» ### New Pool
 ```
 import { SupportedNetworks } from '../src/constants';
 import { createWalletClient, http, publicActions } from 'viem'
@@ -91,7 +91,7 @@ const pool = new RAMMPool(
 
 ```
 
-### Pool Balance
+» ### Pool Balance
 ```import { RAMMPool } from '../index';
 import { getWalletBalances, getLPTokensAmounts } from '../src/interface';
 import BigNumber from 'bignumber.js';
@@ -141,7 +141,7 @@ const pool = new RAMMPool(
 
 ```
 
-### Create Trade
+» ### Create Trade
 ```import { tradeGivenIn, tradeGivenOut, RAMMPool } from '../index';
 import { getOutputTradeIn, getOutputTradeOut, getPoolState, TradeParamsBN } from '../src/interface';
 import BigNumber from 'bignumber.js';
@@ -217,7 +217,7 @@ const tokenOut = 1;
 })();
 ```
 
-### Deposit into a Pool
+» ### Deposit into a Pool
 ```import {
     liquidityDeposit,
     multipleLiquidityDeposit,
@@ -316,7 +316,7 @@ describe('polygon ramm deposit to pool', () => {
 });
 ```
 
-### Withdraw from a Pool
+» ### Withdraw from a Pool
 ```
 import {
     liquidityWithdrawal,
