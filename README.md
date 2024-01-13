@@ -58,6 +58,15 @@ const network = SupportedNetworks.matic;
 // Retrieve pool configuration
 const poolConfig = networkConfig[network].poolList[0]; // Assuming only one pool in the example
 
+const signer_account = privateKeyToAccount(process.env.PRIVATE_KEY)
+console.log(signer_account.address, signer_account.publicKey)
+
+const walletClient = createWalletClient({
+  account: signer_account,
+  chain: polygon,
+  transport: http()
+}).extend(publicActions); // ts-ignore-line
+
 // Initialize the pool
 const pool = new RAMMPool(
   poolConfig.poolAddress,
@@ -68,8 +77,7 @@ const pool = new RAMMPool(
   poolConfig.baseFee,
   poolConfig.baseLeverage,
   poolConfig.protocolFee,
-  publicClient, // Assuming publicClient and walletClient are initialized elsewhere
-  walletClient
+  walletClient, 
 );
 ```
 
