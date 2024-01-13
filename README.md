@@ -49,7 +49,7 @@ await tradeGivenIn(tokenIn, tokenOut, tradeAmount, minAmountOut, pool, doConvert
 // Perform trade
 await tradeGivenOut(tokenIn, tokenOut, tradeAmount, maxAmountIn, signer, pool, doConvertToWei);
 ```
-## Examples
+### Examples
 
 # New Pool
 ```
