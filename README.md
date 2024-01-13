@@ -29,11 +29,7 @@
 
 ```import { RAMMPool, liquidityDeposit, liquidityWithdrawal, tradeGivenIn, tradeGivenOut } from '@aldrin-labs/ramm-evm-sdk';
 import { parseGwei } from 'viem'; // import dependencies
-import {
-liquidityWithdrawal,
-multipleLiquidityWithdrawal,
-RAMMPool,
-} from '../index';
+import { liquidityWithdrawal, multipleLiquidityWithdrawal, RAMMPool } from '../index';
 import { BigNumber } from 'bignumber.js'; // import dependencies
 
 // New RAMM Pool
@@ -61,11 +57,7 @@ await tradeGivenOut(tokenIn, tokenOut, tradeAmount, maxAmountIn, signer, pool, d
 import { SupportedNetworks } from '../src/constants';
 import { createWalletClient, http, publicActions } from 'viem'
 import { privateKeyToAccount } from 'viem/accounts'
-import {
-liquidityWithdrawal,
-multipleLiquidityWithdrawal,
-RAMMPool,
-} from '../index';
+import { liquidityWithdrawal, multipleLiquidityWithdrawal, RAMMPool } from '../index';
 import { polygon } from 'wagmi/chains'
 
 const network = SupportedNetworks.matic;
