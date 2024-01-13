@@ -53,7 +53,6 @@ await tradeGivenOut(tokenIn, tokenOut, tradeAmount, maxAmountIn, signer, pool, d
 
 ### New Pool
 ```
-
 import { SupportedNetworks } from '../src/constants';
 import { createWalletClient, http, publicActions } from 'viem'
 import { privateKeyToAccount } from 'viem/accounts'
