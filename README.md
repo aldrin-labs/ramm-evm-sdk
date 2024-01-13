@@ -16,7 +16,7 @@
   * [Installation](#installation)
     * [Examples](#examples)
       * [NewPool](#new-pool)
-      * [Get-Pool/User-Balance](#Get-Pool/User-Balance)
+      * [GetPoolOrUserBalance](#Get-Pool-Or-User-Balance)
       * [CreateTrade](#create-trade)
       * [Deposit](#Deposit-into-a-Pool)
       * [Withdrawal](#Withdraw-from-a-Pool)
@@ -91,7 +91,7 @@ const pool = new RAMMPool(
 
 ```
 
-### Get Pool / User Balance
+### Get Pool Or User Balance
 ```import { RAMMPool } from '../index';
 import { getWalletBalances, getLPTokensAmounts } from '../src/interface';
 import BigNumber from 'bignumber.js';
