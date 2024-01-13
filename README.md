@@ -46,25 +46,26 @@ await tradeGivenOut(tokenIn, tokenOut, tradeAmount, maxAmountIn, signer, pool, d
 ```
 
 ## API Reference
-``Class: RAMMPool
-name: string
-address: string
-chainID: number
-n: number
-client: any
-walletClient: any
-assetsAddresses: string[]
-LPTokenAddresses: string[]
-priceFeedAddresses: string[]
-rammContract: any
-assetsDecimalPlaces: number[]
-LPTokensDecimalPlaces: number[]
-priceFeedsDecimalPlaces: number[]
-LPTokensList: string[]
-assetsList: string[]
-delta, baseFee, baseLeverage, protocolFee: number
-rammParams: object
-PriceFeedContractsList, LPTokenContractsList, tokenContractsList: any[]
+``
+- Class: RAMMPool
+- name: string
+- address: string
+- chainID: number
+- n: number
+- client: any
+- walletClient: any
+- assetsAddresses: string[]
+- LPTokenAddresses: string[]
+- priceFeedAddresses: string[]
+- rammContract: any
+- assetsDecimalPlaces: number[]
+- LPTokensDecimalPlaces: number[]
+- priceFeedsDecimalPlaces: number[]
+- LPTokensList: string[]
+- assetsList: string[]
+- delta, baseFee, baseLeverage, protocolFee: number
+- rammParams: object
+- PriceFeedContractsList, LPTokenContractsList, tokenContractsList: any[]
 ``
 
 # Methods
