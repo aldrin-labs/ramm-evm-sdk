@@ -46,7 +46,7 @@ await tradeGivenOut(tokenIn, tokenOut, tradeAmount, maxAmountIn, signer, pool, d
 ```
 
 ## API Reference
-Class: RAMMPool
+``Class: RAMMPool
 name: string
 address: string
 chainID: number
@@ -65,6 +65,7 @@ assetsList: string[]
 delta, baseFee, baseLeverage, protocolFee: number
 rammParams: object
 PriceFeedContractsList, LPTokenContractsList, tokenContractsList: any[]
+``
 
 # Methods
 - initialize(chain: any, transport?: any): Promise<void>
