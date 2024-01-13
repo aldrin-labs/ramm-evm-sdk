@@ -52,6 +52,11 @@ await tradeGivenOut(tokenIn, tokenOut, tradeAmount, maxAmountIn, signer, pool, d
 
 ### New Pool
 ```
+
+import { SupportedNetworks } from '../src/constants';
+import { createWalletClient, http, publicActions } from 'viem'
+import { privateKeyToAccount } from 'viem/accounts'
+
 const network = SupportedNetworks.matic;
 
 // Retrieve pool configuration
@@ -78,9 +83,10 @@ const pool = new RAMMPool(
   poolConfig.protocolFee,
   walletClient, 
 );
+
 ```
 
-#### Pool Balance
+### Pool Balance
 ```import { RAMMPool } from '../index';
 import { getWalletBalances, getLPTokensAmounts } from '../src/interface';
 import BigNumber from 'bignumber.js';
@@ -127,6 +133,7 @@ const pool = new RAMMPool(
   const balances = await getWalletBalances(signer_account.address, pool);
   console.log('Asset balances:', balances);
 })();
+
 ```
 
 ### Create Trade
@@ -424,7 +431,7 @@ describe('polygon ramm withdraw from pool', () => {
 - rammParams: object
 - PriceFeedContractsList, LPTokenContractsList, tokenContractsList: any[]
 
-# Methods
+## Methods
 - initialize(chain: any, transport?: any): Promise<void>
 - initializeWithData(data: poolData): void
 - callERC20Token(tokenContractAddress: string, functionName: string, args?: any, params?: any): Promise<any>
@@ -437,7 +444,7 @@ describe('polygon ramm withdraw from pool', () => {
 
 # Transactions
 
-# Functions
+## Methods
 - liquidityDeposit(tokenIn: number, depositAmount: BigNumber, signer: any, pool: RAMMPool, toConvertToWei: boolean, gasPrice: any): Promise<any>
 - liquidityWithdrawal(tokenOut: number, amountLPT: BigNumber, pool: RAMMPool, toConvertToWei: boolean, gasPrice: any): Promise<any>
 - tradeGivenIn(tokenIn: number, tokenOut: number, tradeAmount: BigNumber, minAmountOut: BigNumber, pool: RAMMPool, doConvertToWei: boolean, gasPrice: any): Promise<any>
