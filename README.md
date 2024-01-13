@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://avatars.githubusercontent.com/u/60558183?s=200&v=4" alt="Logo" width="240">
+  <img src="https://avatars.githubusercontent.com/u/60558183?s=200&v=4&width=500" alt="Logo" width="240">
   
   # Rebalancing Automated Market Maker (RAMM) TypeScript SDK
 
