@@ -123,12 +123,12 @@ const pool = new RAMMPool(
 ### Transactions
 
 #### Methods
-- liquidityDeposit(tokenIn: number, depositAmount: BigNumber, signer: any, pool: RAMMPool, toConvertToWei: boolean, gasPrice: any): Promise<any>
-- liquidityWithdrawal(tokenOut: number, amountLPT: BigNumber, pool: RAMMPool, toConvertToWei: boolean, gasPrice: any): Promise<any>
-- tradeGivenIn(tokenIn: number, tokenOut: number, tradeAmount: BigNumber, minAmountOut: BigNumber, pool: RAMMPool, doConvertToWei: boolean, gasPrice: any): Promise<any>
-- tradeGivenOut(tokenIn: number, tokenOut: number, tradeAmount: BigNumber, maxAmountIn: BigNumber, signer: any, pool: RAMMPool, doConvertToWei: boolean, gasPrice: any): Promise<any>
-- multipleLiquidityDeposit(depositAmounts: BigNumber[], signer: any, pool: RAMMPool): Promise<any>
-- multipleLiquidityWithdrawal(amountsLPT: BigNumber[], signer: any, pool: RAMMPool, toConvertToWei: boolean): Promise<any>
+- [liquidityDeposit(tokenIn: number, depositAmount: BigNumber, signer: any, pool: RAMMPool, toConvertToWei: boolean, gasPrice: any): Promise<any>](#Deposit-Into-A-Pool)
+- [multipleLiquidityDeposit(depositAmounts: BigNumber[], signer: any, pool: RAMMPool): Promise<any>](#Deposit-Into-A-Pool)
+- [liquidityWithdrawal(tokenOut: number, amountLPT: BigNumber, pool: RAMMPool, toConvertToWei: boolean, gasPrice: any): Promise<any>](#Withdraw-From-A-Pool)
+- [multipleLiquidityWithdrawal(amountsLPT: BigNumber[], signer: any, pool: RAMMPool, toConvertToWei: boolean): Promise<any>](#Withdraw-From-A-Pool)
+- [tradeGivenIn(tokenIn: number, tokenOut: number, tradeAmount: BigNumber, minAmountOut: BigNumber, pool: RAMMPool, doConvertToWei: boolean, gasPrice: any): Promise<any>](#Create-A-trade)
+- [tradeGivenOut(tokenIn: number, tokenOut: number, tradeAmount: BigNumber, maxAmountIn: BigNumber, signer: any, pool: RAMMPool, doConvertToWei: boolean, gasPrice: any): Promise<any>](#Create-A-trade)
 
 
 ## Example
@@ -436,6 +436,7 @@ const WETH_INDEX = 1;
 Follow our [Contribution Guidelines](#) to get started & submit [Pull requests](https://github.com/aldrin-labs/ramm-evm-sdk/pulls)
 
 ## License
+//
 
 ## Issues
 
