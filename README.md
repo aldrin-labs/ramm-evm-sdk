@@ -1,12 +1,20 @@
 # RAMM SDK for EVM Chains
 
 ## Introduction
-RAMM SDK is a TypeScript library designed to facilitate interactions with Ethereum Virtual Machine (EVM) chains. It provides developers with the tools necessary to build, deploy, and interact with smart contracts across various EVM-compatible blockchain networks.
 
-### Features
-- Interact with EVM chains.
-- Simplify smart contract operations.
-- Enhance blockchain application development.
+The RAMM SDK for EVM Chains, short for Rebalancing Automated Market Maker, is a sophisticated TypeScript library designed for Ethereum Virtual Machine (EVM) chains. It equips developers with advanced tools to efficiently engage in automated market-making, liquidity management, and smart contract interactions on various EVM-compatible blockchains. Tailored for decentralized finance (DeFi) applications, the SDK streamlines the process of creating dynamic trading strategies, managing liquidity pools, and interacting with a range of DeFi protocols. By simplifying complex blockchain operations, the RAMM SDK is an indispensable
+
+
+## Features
+
+- **Advanced Trading Operations**: Facilitate various trading operations like `tradeGivenIn` and `tradeGivenOut`, providing flexibility in trading strategies.
+- **Liquidity Management**: Enable easy liquidity management through methods like `liquidityDeposit`, `liquidityWithdrawal`, `multipleLiquidityDeposit`, and `multipleLiquidityWithdrawal`.
+- **Smart Contract Interaction**: Simplify interactions with EVM smart contracts using methods like `callERC20Token` and `approve`.
+- **Pool State Management**: Offer functionalities to manage and retrieve the state of liquidity pools using methods like `getPoolState`.
+- **Easy Initialization**: Provide straightforward initialization of the SDK and pool setup with `initialize` and `initializeWithData`.
+- **Flexible Configuration**: Support various network configurations and custom setups, enhancing the SDK's adaptability to different blockchain environments.
+- **Developer-Friendly Environment**: The usage code demonstrates the SDK's integration with other libraries and tools, highlighting its compatibility and ease of use in diverse development scenarios.
+
 
 ## Getting Started
 
@@ -17,27 +25,56 @@ RAMM SDK is a TypeScript library designed to facilitate interactions with Ethere
 ### Installation
 To install the RAMM SDK, run the following command in your project directory:
 
+- Installing via `npm`:
 ```bash
-npm install ramm-evm-sdk
+npm install @aldrin-labs/ramm-evm-sdk
 ```
-or
-```yarn
-yarn add ramm-evm-sdk
-```
-### Usage
-```
-import { RammSDK } from 'ramm-evm-sdk';
-
-const sdk = new RammSDK(/*
+- Installing via `yarn`:
+```bash
+yarn add @aldrin-labs/ramm-evm-sdk
 ```
 
-### Contributing
-We welcome contributions to the RAMM SDK! Please read our [Contributing Guide](CONTRIBUTING.md) for details on our code of conduct and the process for submitting pull requests.
+## Usage
 
-### Support and Community
-Join our community on [Discord/Slack/Forum] for support and discussion.
+To utilize the RAMM SDK in your project, start by importing the required components. Here is a simplified example to demonstrate the basic setup:
 
-### License
-This project is licensed under the [MIT License](LICENSE).
+```typescript
+import { RAMMPool, liquidityDeposit, tradeGivenIn } from '@aldrin-labs/ramm-evm-sdk';
+import { BigNumber } from 'bignumber.js';
+
+// Example: Setting up a RAMM Pool
+const poolAddress = "YOUR_POOL_ADDRESS";
+const chainID = YOUR_CHAIN_ID; // Replace with your chain ID
+const poolName = "YOUR_POOL_NAME";
+const numberOfTokens = 2; // Number of tokens in your pool
+const delta = 0.3; // Example delta value
+const baseFee = 0.01; // Example base fee
+const baseLeverage = 3; // Example base leverage
+const protocolFee = 0.005; // Example protocol fee
+
+const pool = new RAMMPool(
+  poolAddress,
+  chainID,
+  poolName,
+  numberOfTokens,
+  delta,
+  baseFee,
+  baseLeverage,
+  protocolFee
+);
+
+```
+## Contributing
+Follow our [Contribution Guidelines](#) to get started & submit [Pull requests](https://github.com/aldrin-labs/ramm-evm-sdk/pulls)
+
+
+## Issues
+[Report issues, bugs, or request features on our Issue Tracker.](https://github.com/aldrin-labs/ramm-evm-sdk/issues/new) 
+
+## Changelog
+Refer to the [Changelog](https://github.com/aldrin-labs/ramm-evm-sdk/releases) for details on each release.
+
+## Support and Community
+Join our community on [Discord](https://discord.gg/4VZyNxT2WU) for support and discussion.
 
 
