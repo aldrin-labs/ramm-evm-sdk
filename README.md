@@ -123,12 +123,12 @@ const pool = new RAMMPool(
 ### Transactions
 
 #### Methods
-- [liquidityDeposit(tokenIn: number, depositAmount: BigNumber, signer: any, pool: RAMMPool, toConvertToWei: boolean, gasPrice: any): Promise<any>](#Deposit-Into-A-Pool)
-- [multipleLiquidityDeposit(depositAmounts: BigNumber[], signer: any, pool: RAMMPool): Promise<any>](#Deposit-Into-A-Pool)
-- [liquidityWithdrawal(tokenOut: number, amountLPT: BigNumber, pool: RAMMPool, toConvertToWei: boolean, gasPrice: any): Promise<any>](#Withdraw-From-A-Pool)
-- [multipleLiquidityWithdrawal(amountsLPT: BigNumber[], signer: any, pool: RAMMPool, toConvertToWei: boolean): Promise<any>](#Withdraw-From-A-Pool)
-- [tradeGivenIn(tokenIn: number, tokenOut: number, tradeAmount: BigNumber, minAmountOut: BigNumber, pool: RAMMPool, doConvertToWei: boolean, gasPrice: any): Promise<any>](#Create-A-trade)
-- [tradeGivenOut(tokenIn: number, tokenOut: number, tradeAmount: BigNumber, maxAmountIn: BigNumber, signer: any, pool: RAMMPool, doConvertToWei: boolean, gasPrice: any): Promise<any>](#Create-A-trade)
+- [liquidityDeposit](#Deposit-Into-A-Pool)
+- [multipleLiquidityDeposit](#Deposit-Into-A-Pool)
+- [liquidityWithdrawal](#Withdraw-From-A-Pool)
+- [multipleLiquidityWithdrawal](#Withdraw-From-A-Pool)
+- [tradeGivenIn](#Create-A-trade)
+- [tradeGivenOut](#Create-A-trade)
 
 
 ## Example
