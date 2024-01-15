@@ -54,6 +54,7 @@ const pool = new RAMMPool(
   poly_ramm.baseFee,
   poly_ramm.baseLeverage,
   poly_ramm.protocolFee,
+  publicClient,
   walletClient
   );
 const wmatic_amount_in = new BigNumber("1000000000000000000", 10); // 1 wmatic = 0.0003648 eth
