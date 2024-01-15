@@ -55,7 +55,7 @@ const pool = new RAMMPool(
   poly_ramm.baseFee,
   poly_ramm.baseLeverage,
   poly_ramm.protocolFee,
-  walletClient,
+  publicClient,
   walletClient
   );
 
