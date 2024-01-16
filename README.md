@@ -514,4 +514,4 @@ async () => {
 
 ## Issues
 
-[Report issues, bugs, or request features on our Issue Tracker.](https://github.com/aldrin-labs/ramm-evm-sdk/issues/new)
+[Report issues, bugs, or request features on our Issue Tracker.](https://github.com/aldrin-labs/ramm-evm-sdk/issues)
