@@ -14,6 +14,9 @@
     <a href="https://docs.aldrin.com/"><img alt="Tutorials" src="https://img.shields.io/badge/docs-tutorials-blueviolet" /></a>
     <a href="https://discord.gg/aldrin"><img alt="Discord Chat" src="https://img.shields.io/discord/889577356681945098?color=blueviolet" /></a>
   </p>
+
+[![Twitter](https://img.shields.io/badge/follow-%40HelloTelos-834e9f?logo=X&style=for-the-badge)](https://x.com/hellotelos)
+
 </div>
 
 ## Table Of Contents
