@@ -35,5 +35,13 @@ console.log(result);
 
 ## Contributions
 
-We welcome contributions from the community! If you find a bug, have a feature request, raise an issue or submit a pull request.
+🚀 Thank you for considering contributing to Ramm EVM SDK! We welcome contributions from the community to make our SDK even better. Here's how you can get involved:
+
+### Reporting Issues
+
+If you encounter any bugs, have feature requests, or want to suggest improvements, raise an issue and submit a pull request
+
+Thank you for helping us make Ramm EVM SDK a fantastic tool for the community!
+
+Happy coding! 🚀
 
