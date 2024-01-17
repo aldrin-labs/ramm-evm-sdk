@@ -1,34 +1,39 @@
-#Ramm EVM SDK
 
-##Table of Contents
-###Introduction
-###Features
-###Getting Started
-###Installation
-###Usage
-#Introduction
+# Ramm EVM SDK
 
-Welcome to the Ramm EVM SDK! This software development kit is designed to simplify and enhance your experience with Ramm's Ethereum Virtual Machine (EVM) integration. Whether you are a developer or a blockchain enthusiast, this SDK provides powerful tools to interact with the Ramm EVM.
+![Ramm EVM SDK Logo](https://www.google.com/imgres?imgurl=https%3A%2F%2Fzora.co%2Fapi%2Fthumbnail%2F1%2F0x37fb80ef28008704288087831464058a4a3940ae&tbnid=utKA2XKWwziKpM&vet=12ahUKEwirirHpluWDAxVbqycCHfEpBcUQMygpegUIARC6AQ..i&imgrefurl=https%3A%2F%2Fzora.co%2Fcollect%2Feth%3A0x37fb80ef28008704288087831464058a4a3940ae&docid=J4bIKTvP2zAOUM&w=500&h=500&q=evm%20logo&ved=2ahUKEwirirHpluWDAxVbqycCHfEpBcUQMygpegUIARC6AQ)
 
-#Features
+Welcome to the Ramm EVM SDK, your gateway to seamless Ethereum Virtual Machine integration for software development. Unleash the power of decentralized applications with Ramm's robust and developer-friendly SDK.
 
-Seamless integration with Ramm's Ethereum Virtual Machine
-Easy-to-use APIs for interacting with the EVM
-Comprehensive documentation for quick onboarding
-Extensive test suite for robustness
+## Features
 
-#Getting Started
+- **Effortless EVM Integration:** Quickly and seamlessly integrate Ethereum Virtual Machine capabilities into your applications with minimal effort.
+- **Scalable and Reliable:** Ramm EVM SDK is designed for scalability, providing a reliable foundation for your decentralized projects.
+- **Developer-Friendly APIs:** Our SDK comes with intuitive APIs, making it easy for developers to interact with the Ethereum blockchain and deploy smart contracts.
+- **Extensive Documentation:** Dive into our [comprehensive documentation](aldrinlabs.com/) to explore the full potential of Ramm EVM SDK. From installation to advanced use cases, we've got you covered.
 
-##Installation
-To get started with the Ramm EVM SDK, follow these simple steps:
+## Getting Started
 
-bash
+### Installation
+
+```bash
 npm install ramm-evm-sdk
-Usage
-javascript
-const rammEvm = require('ramm-evm-sdk');
 
-// Use the SDK to interact with the Ramm EVM
-// 
-For detailed usage instructions, refer to our Documentation. link: https://aldrin.com
+const rammEVM = require('ramm-evm-sdk');
+
+``javascript
+
+// Initialize the EVM
+const evm = new rammEVM();
+
+// Deploy a smart contract
+const contract = evm.deployContract('YourSmartContract.sol');
+
+// Interact with the contract
+const result = contract.callFunction('yourFunction', params);
+console.log(result);
+
+## Contributions
+
+We welcome contributions from the community! If you find a bug, have a feature request, raise an issue or submit a pull request.
 
