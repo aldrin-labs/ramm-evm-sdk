@@ -81,10 +81,88 @@ To test `multipleLiquidityWithdrawal`:
 2. Provide a testing `signer`.
 3. Specify the `pool` for testing.
 
-For an immersive dive into usage examples and detailed documentation, check out the [full documentation](link-to-your-documentation).
+For detailed information on available methods, parameters, and advanced usage, please refer to the [full documentation](link-to-your-documentation).
 
 ## Installation
 
 ```bash
 npm install ramm-evm-sdk
 ```
+
+# Usage
+
+## Initialization
+
+```javascript
+const { RammSDK } = require('ramm-evm-sdk');
+
+// Initialize the SDK with your configuration
+const ramm = new RammSDK({
+  network: 'mainnet', // specify the Ethereum network (mainnet, testnet, etc.)
+  apiKey: 'your-api-key', // provide your API key for authentication
+});
+```
+
+## Liquidity Deposit
+```javascript
+// Deposit liquidity to a specified pool
+const depositResult = await ramm.liquidityDeposit({
+  tokenIn: 'ETH',
+  depositAmount: 1.5,
+  pool: 'your-pool-address',
+  signer: 'your-signer',
+});
+console.log('Liquidity Deposit Result:', depositResult);
+```
+
+## Liquidity Withdrawal
+```javascript
+// Withdraw liquidity from a pool
+const withdrawalResult = await ramm.liquidityWithdrawal({
+  tokenOut: 'DAI',
+  amountLPT: 100,
+  pool: 'your-pool-address',
+  signer: 'your-signer',
+});
+console.log('Liquidity Withdrawal Result:', withdrawalResult);
+```
+
+## Trade Given In
+```javascript
+// Perform a trade by providing the amount of a token that goes into the pool
+const tradeInResult = await ramm.tradeGivenIn({
+  tokenIn: 'USDC',
+  tokenOut: 'ETH',
+  tradeAmount: 500,
+  minAmountOut: 1,
+  pool: 'your-pool-address',
+  signer: 'your-signer',
+});
+console.log('Trade Given In Result:', tradeInResult);
+```
+
+## Trade Given Out
+```javascript
+// Perform a trade by specifying the amount of the token that goes out of the pool
+const tradeOutResult = await ramm.tradeGivenOut({
+  tokenIn: 'ETH',
+  tokenOut: 'USDT',
+  tradeAmount: 2,
+  maxAmountIn: 1000,
+  pool: 'your-pool-address',
+  signer: 'your-signer',
+});
+console.log('Trade Given Out Result:', tradeOutResult);
+```
+
+
+For detailed information on available methods, parameters, and advanced usage, please refer to the [full documentation](link-to-your-documentation).
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## Contact
+
+- **Maintainer:** Alrin Labs
+- **Website:** [aldrin.com](https://aldrin.com/)
