@@ -81,8 +81,6 @@ To test `multipleLiquidityWithdrawal`:
 2. Provide a testing `signer`.
 3. Specify the `pool` for testing.
 
-For detailed information on available methods, parameters, and advanced usage, please refer to the [full documentation](link-to-your-documentation).
-
 ## Installation
 
 ```bash
