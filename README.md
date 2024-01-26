@@ -1,7 +1,7 @@
 
 # RAMM SDK Documentation
 
-The RAMM SDK is a comprehensive toolkit designed for developers to interact with RAMM (Risk-Adjusted Market Maker) pools on the blockchain. This SDK simplifies the process of integrating RAMM functionalities into decentralized applications (DApps), allowing for operations such as trading, liquidity provision, and retrieval of pool states
+The RAMM SDK is a comprehensive toolkit designed for developers to interact with RAMM (Risk-Adjusted Market Maker) pools on the blockchain. This SDK simplifies the process of integrating RAMM functionalities into decentralized applications (DApps), allowing for operations such as trading, liquidity provision, and retrieval of pool states.
 
 ## Features
 
