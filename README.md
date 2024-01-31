@@ -23,7 +23,7 @@ The RAMM EVM SDK is a comprehensive toolkit that brings EVM compatibility to the
 - EVM Compatibility: Execute Ethereum smart contracts on the Solana blockchain.
 - Solidity Support: Write smart contracts in Solidity, the popular Ethereum programming language.
 - Web3.js Integration: Connect to the Solana network using Web3.js, enabling seamless interaction with smart contracts.
-- Scalability: Utilize Solana's high throughput and low transaction fees for decentralized applications (DApps).`
+- Scalability: Utilize Solana's high throughput and low transaction fees for decentralized applications (DApps).
 
 ### Installation
 
@@ -41,7 +41,7 @@ npm install @ramm/evm-sdk
 const wallet = await solanaWeb3.createWallet();
 ```
 
-2. Deploy EVM Contract:`
+2. Deploy EVM Contract:
 
 ```
 const evmContract = await rammEvm.deployContract(wallet, "YourSolidityContract.sol");
