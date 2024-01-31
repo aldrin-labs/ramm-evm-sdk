@@ -21,19 +21,14 @@ const hexToAscii = function (hexString: string) {
  */
 
 const extendMessage = function (message: string) {
-    var extendedMessage = ''
-    if (message == 'trade') {
-        extendedMessage = 'Trade successfully executed.';
-    } else if (message == 'deposit') {
-        extendedMessage = 'Deposit successfully executed.';
-    } else if (message == 'withdrawal') {
-        extendedMessage = 'Withdrawal successfully executed.';
-    } else {
-        extendedMessage = message;
+    const messageMap: Record<string, string> = {
+        'trade': 'Trade successfully executed.',
+        'deposit': 'Deposit successfully executed.',
+        'withdrawal': 'Withdrawal successfully executed.',
     };
-    return extendedMessage;
-};
 
+    return messageMap[message] || message;
+};
 /**
  * Parses data field in log with string at the end (all in hex) and returns the corresponding message.
  */
@@ -54,13 +49,10 @@ const dataToMessage = function (data: string) {
  * Parses list of logs from a transaction and returns the corresponding message.
  */
 const logsToMessage = function (logList: transactionLog[], poolAddress: string) {
-    var message = '';
-    logList.forEach( (log) => {
-        if (log.address == poolAddress) {
-            message += dataToMessage(log.data);
-        };
-    });
-    return message;
+    return logList
+        .filter(log => log.address === poolAddress)
+        .map(log => dataToMessage(log.data))
+        .join('');
 };
 
 export { logsToMessage, dataToMessage, hexToAscii, extendMessage };
