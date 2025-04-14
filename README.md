@@ -1,8 +1,8 @@
-# RAMM EVM SDK
+# WAMM EVM SDK
 
-A TypeScript SDK for interacting with RAMM (Risk-Adjusted Market Making) pools on EVM-compatible blockchains.
+A TypeScwipt SDK fow intewacting wid WAMM (Wisk-Adjusted Mawket Making) poows on EVM-compatibwe bwockchains.
 
-## Installation
+## Instawwation
 
 ```bash
 # Using yarn
@@ -12,24 +12,24 @@ yarn add @ramm/ramm-evm-sdk
 npm install @ramm/ramm-evm-sdk
 ```
 
-## Getting Started
+## Getting Stawted
 
-### Initializing the SDK
+### Inyitiawizing de SDK
 
-First, import the `RAMMPool` class from the SDK:
-
-```typescript
+Fiwst, impowt de ```typescript
 import { RAMMPool } from '@ramm/ramm-evm-sdk';
 import { createPublicClient, http } from 'viem';
 import { mainnet } from 'viem/chains';
 import { BigNumber } from 'bignumber.js';
-```
+```5 cwass fwom de SDK:
 
-### Connecting to a Pool
+UWUIFY_TOKEN_1744630281644_1
 
-There are two ways to initialize a RAMM pool:
+### Connyecting to a Poow
 
-#### Method 1: Using `initialize`
+Dewe awe two ways to inyitiawize a WAMM poow:
+
+#### Medod 1: Using `initialize`
 
 ```typescript
 // Create a viem public client
@@ -48,7 +48,7 @@ await pool.initialize({
 });
 ```
 
-#### Method 2: Using `initializeWithData`
+#### Medod 2: Using `initializeWithData`
 
 ```typescript
 // If you already have the pool configuration data
@@ -77,9 +77,9 @@ const pool = new RAMMPool();
 pool.initializeWithData(poolConfigData, client, walletClient);
 ```
 
-## Common Operations
+## Common Opewations
 
-### Querying Pool State
+### Quewying Poow State
 
 ```typescript
 // Get the current state of the pool
@@ -91,7 +91,7 @@ console.log('Asset Prices:', poolState.prices);
 
 ### Deposits
 
-#### Single Asset Deposit
+#### Singwe Asset Deposit
 
 ```typescript
 // Deposit a single asset
@@ -108,7 +108,7 @@ const txHash = await tx.execute();
 console.log('Deposit Transaction Hash:', txHash);
 ```
 
-#### Multi-Asset Deposit
+#### Muwti-Asset Deposit
 
 ```typescript
 // Deposit multiple assets
@@ -124,9 +124,9 @@ const tx = await pool.depositMultipleAssets(multiDepositParams);
 const txHash = await tx.execute();
 ```
 
-### Withdrawals
+### Widdwawaws
 
-#### Single Asset Withdrawal
+#### Singwe Asset Widdwawaw
 
 ```typescript
 // Withdraw a single asset by burning LP tokens
@@ -139,7 +139,7 @@ const tx = await pool.withdraw(withdrawalParams);
 const txHash = await tx.execute();
 ```
 
-#### Multi-Asset Withdrawal
+#### Muwti-Asset Widdwawaw
 
 ```typescript
 // Withdraw multiple assets proportionally
@@ -155,9 +155,9 @@ const tx = await pool.withdrawMultipleAssets(multiWithdrawalParams);
 const txHash = await tx.execute();
 ```
 
-### Trading
+### Twading
 
-#### Trade Given Input Amount
+#### Twade Given Input Amount
 
 ```typescript
 // Trade TOKEN1 for TOKEN2 with a specified input amount
@@ -176,7 +176,7 @@ const tx = await pool.tradeGivenIn(tradeParams);
 const txHash = await tx.execute();
 ```
 
-#### Trade Given Output Amount
+#### Twade Given Output Amount
 
 ```typescript
 // Trade TOKEN1 for TOKEN2 with a specified output amount
@@ -195,7 +195,7 @@ const tx = await pool.tradeGivenOut(tradeParams);
 const txHash = await tx.execute();
 ```
 
-### Querying Wallet Balances
+### Quewying Wawwet Bawances
 
 ```typescript
 // Get wallet balances for all assets in the pool
@@ -208,9 +208,9 @@ const lpTokenBalances = await pool.getLPTokensAmounts(walletAddress);
 console.log('LP Token Balances:', lpTokenBalances);
 ```
 
-## Supported Networks
+## Suppowted Nyetwowks
 
-The SDK supports multiple EVM-compatible networks. You can use the `SupportedNetworks` enum:
+De SDK suppowts muwtipwe EVM-compatibwe nyetwowks~ You can use de `SupportedNetworks` enyum:
 
 ```typescript
 import { SupportedNetworks } from '@ramm/ramm-evm-sdk';
@@ -232,9 +232,9 @@ await arbitrumPool.initialize({
 });
 ```
 
-## Working with BigNumber
+## Wowking wid BigNyumbew
 
-This SDK uses [bignumber.js](https://github.com/MikeMcl/bignumber.js/) for precise calculations, especially important when dealing with token amounts.
+Dis SDK uses [bignumber.js](https://github.com/MikeMcl/bignumber.js/) fow pwecise cawcuwations, especiawwy impowtant when deawing wid token amounts.
 
 ```typescript
 import { BigNumber } from 'bignumber.js';
@@ -249,35 +249,35 @@ const amountInWei = amount.times(new BigNumber('1e18'));
 const formattedAmount = amountInWei.div(new BigNumber('1e18')).toString();
 ```
 
-## Environment Setup
+## Enviwonment Setup
 
-Create a `.env` file based on the provided `.env.example`:
+Cweate a `.env` fiwe based on de pwovided `.env.example`:
 
 ```
 ALCHEMY_API_KEY=your_alchemy_api_key
 PRIVATE_KEY=your_private_key
 ```
 
-## Troubleshooting
+## Twoubweshooting
 
 ### Common Issues
 
-1. **Transaction Errors**:
-   - Ensure you have enough gas and token allowance
-   - Check that the wallet has approved the RAMM contract to spend tokens
+1~ **Twansaction Ewwows**:
+   - Ensuwe you have enyough gas and token awwowance
+   - Check dat de wawwet has appwuvd de WAMM contwact to spend tokens
 
-2. **Connection Issues**:
-   - Verify your RPC URL is correct and accessible
-   - Ensure you're connecting to the correct network
+2~ **Connyection Issues**:
+   - Vewify youw WPC UWW is cowwect and accessibwe
+   - Ensuwe you'we connyecting to de cowwect nyetwowk
 
-3. **BigNumber Errors**:
-   - Always use strings when creating BigNumber instances to avoid precision issues
-   - Be mindful of token decimal places when calculating amounts
+3~ **BigNyumbew Ewwows**:
+   - Awways use stwings when cweating BigNyumbew instances to avoid pwecision issues
+   - Be mindfuw of token decimaw pwaces when cawcuwating amounts
 
-### Getting Help
+### Getting Hewp
 
-If you encounter issues not covered here, please open an issue on the GitHub repository.
+If you encountew issues nyot cuvwed hewe, pwease open an issue on de GitHub wepositowy.
 
-## License
+## Wicense
 
 [MIT](LICENSE)
